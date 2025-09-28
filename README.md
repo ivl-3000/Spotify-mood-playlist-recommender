@@ -53,7 +53,7 @@ A Data Science project that builds a **mood and context-aware hybrid recommender
 - [x] Day 7 – Literature Review Notes  
 - [x] Day 8 – Environment Setup  
 - [x] Day 9 – GitHub Repo & README  
-- [ ] Day 10+ – Dataset Planning & Collection  
+- [x] Day 10+ – Dataset Planning & Collection  
 
 ---
 
