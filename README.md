@@ -31,3 +31,40 @@ A Data Science project that builds a **mood and context-aware hybrid recommender
 ---
 
 ## 📂 Repository Structure
+
+
+---
+
+## 🚀 Tech Stack
+- **Python** (Pandas, NumPy, Scikit-learn, Transformers, PyTorch)  
+- **SQL (PostgreSQL)** for data storage & ETL  
+- **Power BI** for dashboards & visualization  
+- **GitHub** for version control & portfolio  
+
+---
+
+## 📊 Progress Tracker
+- [x] Day 1 – Project Scope Defined  
+- [x] Day 2 – Problem Statement Draft  
+- [x] Day 3 – Identified Gaps in Music Recommenders  
+- [x] Day 4 – Reviewed Spotify RecSys Papers  
+- [x] Day 5 – NLP in Music (Mood Detection)  
+- [x] Day 6 – Hybrid RecSys Review  
+- [x] Day 7 – Literature Review Notes  
+- [x] Day 8 – Environment Setup  
+- [ ] Day 9 – GitHub Repo & README  
+- [ ] Day 10+ – Dataset Planning & Collection  
+
+---
+
+## ✨ Author
+👤 **Jainam Shah**  
+📍 Master’s Student | Data Science Enthusiast | AI for Music & Recommender Systems  
+🔗 [LinkedIn Profile]() | [Portfolio Website (Coming Soon)]()  
+
+---
+
+## 📜 License
+This project is for **educational & research purposes** only.  
+All rights to Spotify data belong to **Spotify AB**.  
+
