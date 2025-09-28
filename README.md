@@ -52,7 +52,7 @@ A Data Science project that builds a **mood and context-aware hybrid recommender
 - [x] Day 6 – Hybrid RecSys Review  
 - [x] Day 7 – Literature Review Notes  
 - [x] Day 8 – Environment Setup  
-- [ ] Day 9 – GitHub Repo & README  
+- [x] Day 9 – GitHub Repo & README  
 - [ ] Day 10+ – Dataset Planning & Collection  
 
 ---
@@ -60,7 +60,7 @@ A Data Science project that builds a **mood and context-aware hybrid recommender
 ## ✨ Author
 👤 **Jainam Shah**  
 📍 Master’s Student | Data Science Enthusiast | AI for Music & Recommender Systems  
-🔗 [LinkedIn Profile]() | [Portfolio Website (Coming Soon)]()  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/jainamshah41) | [Portfolio Website (Coming Soon)]()  
 
 ---
 
