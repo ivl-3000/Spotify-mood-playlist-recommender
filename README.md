@@ -66,11 +66,91 @@ This project aims to build a **mood & context-aware music recommender system** u
 ---
 
 ## 📂 Repository Structure (planned)  
-spotify-mood-playlist-2025/
-│── data/ # Raw + processed datasets
-│── notebooks/ # Jupyter notebooks for NLP + recommender
-│── src/ # Source code (ETL, models, utils)
-│── sql/ # SQL schema + queries
-│── dashboard/ # Power BI files
-│── reports/ # Technical reports & documentation
-│── README.md # Project overview & roadmap
+graph TD
+    A[Spotify Mood Playlist 2025] --> B(README.md);
+
+    subgraph Project Structure
+        B --> C[data/];
+        B --> D[notebooks/];
+        B --> E[src/];
+        B --> F[sql/];
+        B --> G[dashboard/];
+        B --> H[reports/];
+    end
+
+    subgraph data/
+        C --> C1(raw_data/);
+        C --> C2(processed_data/);
+    end
+
+    subgraph notebooks/
+        D --> D1(EDA.ipynb);
+        D --> D2(Model_Prototyping.ipynb);
+    end
+
+    subgraph src/
+        E --> E1(etl/);
+        E --> E2(models/);
+        E --> E3(utils/);
+    end
+
+    subgraph etl/
+        E1 --> E1_1(extract.py);
+        E1 --> E1_2(transform.py);
+        E1 --> E1_3(load.py);
+    end
+
+    subgraph models/
+        E2 --> E2_1(mood_classifier.py);
+        E2 --> E2_2(recommender.py);
+    end
+
+    subgraph utils/
+        E3 --> E3_1(spotify_api_client.py);
+        E3 --> E3_2(config.py);
+    end
+
+    subgraph sql/
+        F --> F1(schema.sql);
+        F --> F2(queries.sql);
+    end
+
+    subgraph dashboard/
+        G --> G1(Spotify_Mood_Dashboard.pbix);
+        G --> G2(Dashboard_Specs.pdf);
+    end
+
+    subgraph reports/
+        H --> H1(Technical_Report.pdf);
+        H --> H2(Presentation.pptx);
+    end
+
+    style A fill:#4CAF50,stroke:#388E3C,stroke-width:2px,color:#fff
+    style B fill:#2196F3,stroke:#1976D2,stroke-width:1px,color:#fff
+    style C fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
+    style D fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
+    style E fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
+    style F fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
+    style G fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
+    style H fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
+
+    style C1 fill:#f9f9f9,stroke:#ccc
+    style C2 fill:#f9f9f9,stroke:#ccc
+    style D1 fill:#f9f9f9,stroke:#ccc
+    style D2 fill:#f9f9f9,stroke:#ccc
+    style E1 fill:#f9f9f9,stroke:#ccc
+    style E2 fill:#f9f9f9,stroke:#ccc
+    style E3 fill:#f9f9f9,stroke:#ccc
+    style E1_1 fill:#f9f9f9,stroke:#ccc
+    style E1_2 fill:#f9f9f9,stroke:#ccc
+    style E1_3 fill:#f9f9f9,stroke:#ccc
+    style E2_1 fill:#f9f9f9,stroke:#ccc
+    style E2_2 fill:#f9f9f9,stroke:#ccc
+    style E3_1 fill:#f9f9f9,stroke:#ccc
+    style E3_2 fill:#f9f9f9,stroke:#ccc
+    style F1 fill:#f9f9f9,stroke:#ccc
+    style F2 fill:#f9f9f9,stroke:#ccc
+    style G1 fill:#f9f9f9,stroke:#ccc
+    style G2 fill:#f9f9f9,stroke:#ccc
+    style H1 fill:#f9f9f9,stroke:#ccc
+    style H2 fill:#f9f9f9,stroke:#ccc
