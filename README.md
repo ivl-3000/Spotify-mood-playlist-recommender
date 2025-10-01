@@ -66,19 +66,14 @@ This project aims to build a **mood & context-aware music recommender system** u
 ---
 
 ## 📂 Repository Structure (planned)  
-# Spotify Mood Playlist 2025: Project Architecture
-
-Here is the professional structure of the repository:
-
-```mermaid
 graph TD
     A[README.md] --> B(Project Overview & Roadmap);
     A --> P[Configuration: requirements.txt, .gitignore];
     
     subgraph Data Flow & Processing
-        D[data/ <br> (Raw & Processed Datasets)]
-        S[sql/ <br> (Schema & Queries)]
-        E((src/etl/ <br> (Extract, Transform, Load)));
+        D[data/ \\ (Raw & Processed Datasets)]
+        S[sql/ \\ (Schema & Queries)]
+        E((src/etl/ \\ (Extract, Transform, Load)));
         
         D -- Read Raw Data --> E;
         E -- Write Cleaned Data --> D;
@@ -86,9 +81,9 @@ graph TD
     end
     
     subgraph Analysis & Modeling
-        N[notebooks/ <br> (EDA & Prototypes)];
-        M((src/models/ <br> (Production Models)));
-        U((src/utils/ <br> (API Clients, Helpers)));
+        N[notebooks/ \\ (EDA & Prototypes)];
+        M((src/models/ \\ (Production Models)));
+        U((src/utils/ \\ (API Clients, Helpers)));
         
         D -- Feeds Features --> N;
         N -- Prototypes Logic --> M;
@@ -99,8 +94,8 @@ graph TD
     
     subgraph Output & Reporting
         C[Core Recommendation Engine]
-        R[reports/ <br> (Documentation & Results)];
-        H[dashboard/ <br> (Power BI Files)]
+        R[reports/ \\ (Documentation & Results)];
+        H[dashboard/ \\ (Power BI Files)]
         
         C -- Generates Metrics --> R;
         C -- Powers Visualization --> H;
