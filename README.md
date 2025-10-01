@@ -66,91 +66,56 @@ This project aims to build a **mood & context-aware music recommender system** u
 ---
 
 ## 📂 Repository Structure (planned)  
+# Spotify Mood Playlist 2025: Project Architecture
+
+Here is the professional structure of the repository:
+
+```mermaid
 graph TD
-    A[Spotify Mood Playlist 2025] --> B(README.md);
-
-    subgraph Project Structure
-        B --> C[data/];
-        B --> D[notebooks/];
-        B --> E[src/];
-        B --> F[sql/];
-        B --> G[dashboard/];
-        B --> H[reports/];
+    A[README.md] --> B(Project Overview & Roadmap);
+    A --> P[Configuration: requirements.txt, .gitignore];
+    
+    subgraph Data Flow & Processing
+        D[data/ <br> (Raw & Processed Datasets)]
+        S[sql/ <br> (Schema & Queries)]
+        E((src/etl/ <br> (Extract, Transform, Load)));
+        
+        D -- Read Raw Data --> E;
+        E -- Write Cleaned Data --> D;
+        E -- Prepare Aggregates --> S;
     end
-
-    subgraph data/
-        C --> C1(raw_data/);
-        C --> C2(processed_data/);
+    
+    subgraph Analysis & Modeling
+        N[notebooks/ <br> (EDA & Prototypes)];
+        M((src/models/ <br> (Production Models)));
+        U((src/utils/ <br> (API Clients, Helpers)));
+        
+        D -- Feeds Features --> N;
+        N -- Prototypes Logic --> M;
+        M -- Deploys Model Classes --> C;
+        E -- Utilizes --> U;
+        M -- Utilizes --> U;
     end
-
-    subgraph notebooks/
-        D --> D1(EDA.ipynb);
-        D --> D2(Model_Prototyping.ipynb);
+    
+    subgraph Output & Reporting
+        C[Core Recommendation Engine]
+        R[reports/ <br> (Documentation & Results)];
+        H[dashboard/ <br> (Power BI Files)]
+        
+        C -- Generates Metrics --> R;
+        C -- Powers Visualization --> H;
+        N -- Summarizes Findings --> R;
     end
-
-    subgraph src/
-        E --> E1(etl/);
-        E --> E2(models/);
-        E --> E3(utils/);
-    end
-
-    subgraph etl/
-        E1 --> E1_1(extract.py);
-        E1 --> E1_2(transform.py);
-        E1 --> E1_3(load.py);
-    end
-
-    subgraph models/
-        E2 --> E2_1(mood_classifier.py);
-        E2 --> E2_2(recommender.py);
-    end
-
-    subgraph utils/
-        E3 --> E3_1(spotify_api_client.py);
-        E3 --> E3_2(config.py);
-    end
-
-    subgraph sql/
-        F --> F1(schema.sql);
-        F --> F2(queries.sql);
-    end
-
-    subgraph dashboard/
-        G --> G1(Spotify_Mood_Dashboard.pbix);
-        G --> G2(Dashboard_Specs.pdf);
-    end
-
-    subgraph reports/
-        H --> H1(Technical_Report.pdf);
-        H --> H2(Presentation.pptx);
-    end
-
-    style A fill:#4CAF50,stroke:#388E3C,stroke-width:2px,color:#fff
-    style B fill:#2196F3,stroke:#1976D2,stroke-width:1px,color:#fff
-    style C fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
-    style D fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
-    style E fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
-    style F fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
-    style G fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
-    style H fill:#FFEB3B,stroke:#FBC02D,stroke-width:1px
-
-    style C1 fill:#f9f9f9,stroke:#ccc
-    style C2 fill:#f9f9f9,stroke:#ccc
-    style D1 fill:#f9f9f9,stroke:#ccc
-    style D2 fill:#f9f9f9,stroke:#ccc
-    style E1 fill:#f9f9f9,stroke:#ccc
-    style E2 fill:#f9f9f9,stroke:#ccc
-    style E3 fill:#f9f9f9,stroke:#ccc
-    style E1_1 fill:#f9f9f9,stroke:#ccc
-    style E1_2 fill:#f9f9f9,stroke:#ccc
-    style E1_3 fill:#f9f9f9,stroke:#ccc
-    style E2_1 fill:#f9f9f9,stroke:#ccc
-    style E2_2 fill:#f9f9f9,stroke:#ccc
-    style E3_1 fill:#f9f9f9,stroke:#ccc
-    style E3_2 fill:#f9f9f9,stroke:#ccc
-    style F1 fill:#f9f9f9,stroke:#ccc
-    style F2 fill:#f9f9f9,stroke:#ccc
-    style G1 fill:#f9f9f9,stroke:#ccc
-    style G2 fill:#f9f9f9,stroke:#ccc
-    style H1 fill:#f9f9f9,stroke:#ccc
-    style H2 fill:#f9f9f9,stroke:#ccc
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ddd,stroke:#333
+    style P fill:#ddd,stroke:#333
+    style D fill:#c7e0f4,stroke:#333
+    style N fill:#fff3b0,stroke:#333
+    style E fill:#a8dadc,stroke:#333
+    style M fill:#b8e0b7,stroke:#333
+    style U fill:#d3f2d2,stroke:#333
+    style S fill:#ffadad,stroke:#333
+    style C fill:#8dcbff,stroke:#333
+    style R fill:#ffe6cc,stroke:#333
+    style H fill:#e6ccff,stroke:#333
