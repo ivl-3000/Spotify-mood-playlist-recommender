@@ -1,69 +1,39 @@
-# 🎵 Spotify – Mood & Context-Aware Playlist Recommender (2025 Project)  
+# 📅 Spotify – Mood & Context-Aware Playlist Recommender (2025 Project)
 
-## 📌 Project Overview  
-This project aims to build a **mood & context-aware music recommender system** using **Spotify playlists, lyrics, and social sentiment data**. By combining **NLP (mood detection)** with **recommender system techniques (collaborative + content-based + hybrid)**, the goal is to recommend playlists not only based on user preferences but also on **mood and emotional context**.  
-
----
-
-## 🎯 Project Scope  
-
-✅ **In Scope**  
-- Collecting Spotify playlist metadata (songs, artists, albums, genres).  
-- Collecting & preprocessing lyrics data.  
-- Collecting social sentiment data (Twitter/Reddit or dataset).  
-- Storing all data in SQL for structured access.  
-- NLP pipeline for mood/emotion detection from lyrics & posts.  
-- Building a hybrid recommender (collaborative + content-based + mood-aware).  
-- Power BI dashboard for mood trends & recommendations.  
-- Documentation & showcase (GitHub + LinkedIn).  
-
-❌ **Out of Scope**  
-- Real-time Spotify app integration.  
-- Production-level deployment.  
-- Multilingual lyric support (focus: English only).  
-- Advanced deep reinforcement learning recommenders.  
+## 🎯 Goal
+To build an AI-powered playlist recommendation system that adapts to **user mood and context** (time, activity, location, sentiment from social media, etc.), enhancing personalization beyond standard collaborative filtering.
 
 ---
 
-## 🎯 Project Objectives  
-
-1. **Data Collection & Storage**  
-   - Gather Spotify playlists, lyrics, and sentiment data.  
-   - Store datasets in SQL with a clean schema.  
-
-2. **Mood Detection with NLP/LLMs**  
-   - Preprocess text data (tokenization, lemmatization, stopwords).  
-   - Fine-tune BERT/LLaMA models for emotion classification.  
-   - Categorize moods: *happy, sad, energetic, calm*.  
-
-3. **Recommender System Development**  
-   - Implement collaborative filtering (user–item).  
-   - Implement content-based filtering (lyrics/genre similarity).  
-   - Add mood-aware filtering layer.  
-   - Combine into hybrid recommender & evaluate with metrics (Precision@K, Recall@K, NDCG).  
-
-4. **Dashboard & Showcase**  
-   - Build Power BI dashboard (mood trends, recommendations).  
-   - Write technical report.  
-   - Publish GitHub repo & LinkedIn showcase posts.  
+## 📌 Scope
+- Collect playlist metadata (Spotify API, open datasets).  
+- Aggregate user signals (time of day, listening habits, engagement logs).  
+- Integrate external signals (social media trends, news sentiment).  
+- Build a **Mood & Context-Aware Recommendation Model** using NLP + ML/DL.  
+- Deploy results in a simple **dashboard or web app** to simulate recommendations.  
 
 ---
 
-## 📌 Project Roadmap  
-
-### Phase 1: Setup & Data Collection (Oct 1 – Oct 15)  
-- Repo setup, dataset research, SQL schema design, raw data storage.  
-
-### Phase 2: Mood Detection with NLP/LLMs (Oct 16 – Oct 31)  
-- NLP preprocessing, model fine-tuning, mood classification.  
-
-### Phase 3: Recommender System Development (Nov 1 – Nov 30)  
-- Baseline recommenders, hybrid model, evaluation, visualization.  
-
-### Phase 4: Dashboard & Final Deliverables (Dec 1 – Dec 30)  
-- Power BI dashboard, report writing, GitHub polish, LinkedIn showcase.  
+## 🛠️ Tools & Tech Stack
+- **Languages:** Python (main), SQL (data processing).  
+- **Data Collection:** Spotify API, Web Scrapers, Social Media APIs.  
+- **Processing & Pipelines:** Apache Kafka, Apache Flink, Airflow.  
+- **ML/DL Models:** Transformers (BERT, LSTM, CNNs), Hybrid Recommendation Algorithms.  
+- **NLP:** AWS Comprehend / Vertex AI NLP.  
+- **Visualization:** Power BI / Tableau / Streamlit.  
+- **Cloud:** AWS / GCP for data storage & ML pipelines.  
+- **Version Control:** GitHub.  
 
 ---
 
-## 📂 Repository Structure (planned)  
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/60889524-456a-4cab-8118-33c7b85bfc11" />
+## ✅ Deliverables
+- **Phase 1 (Oct 2025):** Data Ingestion & Documentation.  
+- **Phase 2:** Feature Engineering & Contextual Signal Aggregation.  
+- **Phase 3:** Model Development & Evaluation.  
+- **Phase 4:** Dashboard / App Deployment.  
+- **Phase 5:** Final Report & LinkedIn Showcase.  
+
+---
+
+## 🚀 Outcome
+By the end of this project, I will have a **working context-aware playlist recommender** and a **GitHub portfolio project** that demonstrates my skills in Data Engineering, ML, NLP, and Cloud.
