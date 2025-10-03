@@ -6,7 +6,7 @@ However, user preferences are often influenced by **context and mood** (e.g., st
 
 **Problem:** Existing recommenders lack true *context awareness*. They fail to dynamically adapt to **when**, **where**, and **how** users listen to music.  
 
-This project aims to design a **Mood & Context-Aware Recommender System** that generates playlists not only based on historical listening data, but also using **mood, time, activity, and social signals**.
+This project aims to design a **Mood & Context-Aware Recommender System** that generates playlists not only based on historical listening data, but also using **mood, time, activity, and social signals**. 
 
 ---
 
