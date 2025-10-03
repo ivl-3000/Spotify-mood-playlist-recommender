@@ -36,4 +36,4 @@ To build an AI-powered playlist recommendation system that adapts to **user mood
 ---
 
 ## 🚀 Outcome
-By the end of this project, I will have a **working context-aware playlist recommender** and a **GitHub portfolio project** that demonstrates my skills in Data Engineering, ML, NLP, and Cloud.
+By the end of this project, I will have a **working context-aware playlist recommender** and a **GitHub portfolio project** that demonstrates my skills in Data Science, Data Engineering, ML, NLP, and Cloud.
